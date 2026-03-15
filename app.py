@@ -1,4 +1,13 @@
 import streamlit as st
+# This is CSS code that tells the browser to make the top menu invisible
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.title("My Python Calculator 🧮")
 st.write("This is my first fully functioning web app before deploying it to the world.")
